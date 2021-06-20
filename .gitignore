@@ -2,3 +2,4 @@ node_modules/**
 
 ## DB
 src/config/*
+!src/config/sequelize.js

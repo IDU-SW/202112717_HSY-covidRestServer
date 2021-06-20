@@ -1,9 +1,27 @@
-const app = require('express')();
+const express = require('express');
 const bodyParser = require('body-parser');
-const PORT = require('./src/config/web');
+const sequelize = require('./src/config/sequelize/sequalize');
+const PORT = require('./src/config/web').PORT;
 
+const app = express();
+
+
+sequelize();
+
+app.use(express.json()); // json req를 받아올 수 있다. property 접근은 req.body
 app.use(bodyParser.urlencoded({ extended: false }));
 
+
+
+app.get('/', (req, res) => {
+    console.log(Area);
+});
+
+
+
+app.listen(PORT, () => {
+    console.log('>>>>>>>>>>>>>>server running port ', PORT);
+});
 
 /**
  * DB CRUD
@@ -52,17 +70,3 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 
-app.get('/', (req, res) => {
-    res.send('Hello world');
-});
-
-app.get('/aa', (req, res) => {
-    res.sendStatus(404);
-});
-
-
-
-
-app.listen(PORT, () => {
-    console.log('>>>>>>>>>>>>>>server running port ', PORT);
-});
