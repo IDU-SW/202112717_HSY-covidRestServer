@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const sequelize = require('./src/config/sequelize/sequalize');
+const sequelize = require('./src/config/sequelize/relationMapping');
 const PORT = require('./src/config/web').PORT;
 
 const app = express();
