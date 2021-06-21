@@ -7,10 +7,10 @@ const stepByDistanceController = require('../controller/stepByDistanceController
 
 
 router.get("/insfection-status", insfectionStatusController);
-// router.get("/regional-status", regionalStatusController);
+router.get("/regional-status", regionalStatusController);
 
-// router.get("/areas", areaController);
-// router.get("/areas/:areaSqno", areaController);
+router.get("/areas", areaController.selectAll);
+router.get("/areas/:areaSqno", areaController.selectOne);
 // router.post("/areas", areaController);
 // router.put("/areas/:areaSqno", areaController);
 // router.patch("/areas/use", areaController);

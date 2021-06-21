@@ -4,10 +4,10 @@ const Area = require('../../entity/Area');
 const Vaccine = require('../../entity/Vaccine');
 
 const relation = async () => {
-    Area.belongsTo(StepByDistance);
     StepByDistance.hasMany(Area, {
         foreignKey : 'stepCode'
     });
+    //Area.belongsTo(StepByDistance);
     await connection.sync();
 
   // const result = await Area.create({
