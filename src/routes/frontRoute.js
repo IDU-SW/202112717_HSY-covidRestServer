@@ -9,14 +9,14 @@ const stepByDistanceController = require('../controller/stepByDistanceController
 router.get("/insfection-status", insfectionStatusController);
 router.get("/regional-status", regionalStatusController);
 
-router.get("/areas", areaController.selectAll);
+router.get("/areas", areaController.selectList);
 router.get("/areas/:areaSqno", areaController.selectOne);
-router.post("/areas", areaController.createOne);
-// router.put("/areas/:areaSqno", areaController);
-// router.patch("/areas/use", areaController);
-// router.delete("/areas/:areaSqno", areaController);
+router.post("/areas", areaController.insertOne);
+router.put("/areas/:areaSqno", areaController.updateOne);
+router.patch("/areas/:areaSqno", areaController.patchUse);
+router.delete("/areas/:areaSqno", areaController.deleteOne);
 
-// router.get("/sbds", stepByDistanceController);
+router.get("/sbds", stepByDistanceController.selectList);
 // router.get("/sbds/:stepCode", stepByDistanceController);
 // router.post("/sbds", stepByDistanceController);
 // router.put("/sbds/:stepCode", stepByDistanceController);
