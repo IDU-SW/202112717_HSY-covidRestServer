@@ -11,7 +11,7 @@ router.get("/regional-status", regionalStatusController);
 
 router.get("/areas", areaController.selectAll);
 router.get("/areas/:areaSqno", areaController.selectOne);
-// router.post("/areas", areaController);
+router.post("/areas", areaController.createOne);
 // router.put("/areas/:areaSqno", areaController);
 // router.patch("/areas/use", areaController);
 // router.delete("/areas/:areaSqno", areaController);

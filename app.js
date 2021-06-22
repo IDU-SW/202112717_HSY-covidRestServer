@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', frontRoute);
 
-
  
 app.listen(PORT, () => {
     console.log('>>>>>>>>>>>>>>server running port ', PORT);
