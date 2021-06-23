@@ -2,6 +2,7 @@
 
 ## COVID APP URL : http://13.209.130.175:3000/areas
 
+(6월 21일부터 6월 21일까지 1 페이지의 1개 정보 조회 url)
 http://13.209.130.175:3000/insfection-status?pageNo=1&numOfRows=1&startCreateDt=20210621&endCreateDt=20210621
 
 ### 문서 작성(통신 규약) - README.md로 작성
