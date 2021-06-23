@@ -20,7 +20,7 @@ router.get("/sbds", stepByDistanceController.selectList);
 router.get("/sbds/:stepCode", stepByDistanceController.selectOne);
 router.post("/sbds", stepByDistanceController.createOne);
 router.put("/sbds/:stepCode", stepByDistanceController.updateOne);
-router.patch("/sbds/:stepCode/use", stepByDistanceController.patchUse);
+router.patch("/sbds/:stepCode", stepByDistanceController.patchUse);
 router.delete("/sbds/:stepCode", stepByDistanceController.deleteOne);
 
 router.get("/vaccines", vaccineController.selectList);
