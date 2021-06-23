@@ -1,6 +1,8 @@
 # 202112717 한상영
 
-## COVID APP URL : https://13.209.130.175:3000
+## COVID APP URL : http://13.209.130.175:3000/areas
+
+                 http://13.209.130.175:3000/insfection-status?pageNo=1&numOfRows=1&startCreateDt=20210621&endCreateDt=20210621
 
 ### 문서 작성(통신 규약) - README.md로 작성
 
