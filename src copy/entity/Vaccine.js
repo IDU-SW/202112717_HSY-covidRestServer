@@ -15,7 +15,7 @@ Vaccine.init({
     composition : DataTypes.STRING,
     numOfInoculation : DataTypes.STRING,
     inoculationMethod : DataTypes.STRING,
-    storage : DataTypes.STRING,
+    sotrage : DataTypes.STRING,
     distribution : DataTypes.STRING,
     storageMethod : DataTypes.STRING,
     useYn : DataTypes.STRING,

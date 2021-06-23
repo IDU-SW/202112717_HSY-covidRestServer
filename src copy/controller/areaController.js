@@ -1,3 +1,4 @@
+const connection = require('../config/sequelize/connection');
 const Area = require('../entity/Area');
 
 const selectList = (req, res) => {
@@ -24,7 +25,7 @@ const selectOne = (req, res) => {
         });
 }
 
-const createOne = async (req, res) => {
+const insertOne = async (req, res) => {
     try{
         if ( req.query.name === undefined || req.query.name === "" ) throw new Error("지역 이름이 입력되지 않았습니다.");
         if ( req.query.stepCode === undefined || req.query.stepCode === "") throw new Error("거리두기 단계가 입력되지 않았습니다.");
@@ -90,7 +91,7 @@ const deleteOne = async ( req, res ) => {
 module.exports = {
     selectList,
     selectOne,
-    createOne,
+    insertOne,
     updateOne,
     patchUse,
     deleteOne

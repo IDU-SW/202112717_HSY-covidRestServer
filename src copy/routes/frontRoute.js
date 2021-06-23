@@ -11,23 +11,23 @@ router.get("/regional-status", regionalStatusController);
 
 router.get("/areas", areaController.selectList);
 router.get("/areas/:areaSqno", areaController.selectOne);
-router.post("/areas", areaController.createOne);
+router.post("/areas", areaController.insertOne);
 router.put("/areas/:areaSqno", areaController.updateOne);
 router.patch("/areas/:areaSqno", areaController.patchUse);
 router.delete("/areas/:areaSqno", areaController.deleteOne);
 
 router.get("/sbds", stepByDistanceController.selectList);
-router.get("/sbds/:stepCode", stepByDistanceController.selectOne);
-router.post("/sbds", stepByDistanceController.createOne);
-router.put("/sbds/:stepCode", stepByDistanceController.updateOne);
-router.patch("/sbds/:stepCode/use", stepByDistanceController.patchUse);
-router.delete("/sbds/:stepCode", stepByDistanceController.deleteOne);
+// router.get("/sbds/:stepCode", stepByDistanceController);
+// router.post("/sbds", stepByDistanceController);
+// router.put("/sbds/:stepCode", stepByDistanceController);
+// router.patch("/sbds/:stepCode/use", stepByDistanceController);
+// router.delete("/sbds/:stepCode", stepByDistanceController);
 
-router.get("/vaccines", vaccineController.selectList);
-router.get("/vaccines/:vaccineSqno", vaccineController.selectOne);
-router.post("/vaccines", vaccineController.createOne);
-router.put("/vaccines/:vaccineSqno", vaccineController.updateOne);
-router.patch("/vaccines/:vaccineSqno", vaccineController.patchUse);
-router.delete("/vaccines/:vaccineSqno", vaccineController.deleteOne);
+// router.get("/vaccines", vaccineController);
+// router.get("/vaccines/:vaccines", vaccineController);
+// router.post("/vaccines", vaccineController);
+// router.put("/vaccines/:vaccines", vaccineController);
+// router.patch("/vaccines/:vaccines/use", vaccineController);
+// router.delete("/vaccines/:vaccines", vaccineController);
 
 module.exports = router;
