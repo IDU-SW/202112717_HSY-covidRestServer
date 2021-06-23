@@ -1,6 +1,6 @@
-202112717 한상영
+# 202112717 한상영
 
-- 문서 작성(통신 규약) - README.md로 작성
+## 문서 작성(통신 규약) - README.md로 작성
 
 - git에 aws 키 파일 추가 X
   파일 '.gitignore'는 node_modules, 공공데이터 포탈의 인증키와 RDS(Mysql) 연결 정보가 등록되어있습니다.
