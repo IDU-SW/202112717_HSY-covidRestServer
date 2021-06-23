@@ -61,7 +61,7 @@ const updateOne = async (req, res) => {
 
 const patchUse = async (req, res) => {
     try{
-        if ( req.params.areaSqno === undefined || req.params.areaSqno === "") throw new Error("시퀀스가 입력되지 않았습니다.");
+        if ( req.params.areaSqno === undefined || req.params.areaSqno === "") throw new Error("(URL문제)시퀀스가 입력되지 않았습니다.");
         if ( req.query.useYn === undefined || req.query.useYn === "") throw new Error("사용 여부가 입력되지 않았습니다.");
         const resultArea = await Area.findOne({where : {areaSqno : req.params.areaSqno}});
         if (req.query.useYn !== 'Y' && req.query.useYn !== 'N') throw new Error("사용 여부는 Y 또는 N 이어야 합니다.");    
